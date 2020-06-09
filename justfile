@@ -3,7 +3,6 @@
 install-zola target="$HOME/.cargo/bin/" platform="x86_64-unknown-linux-gnu":
     #!/usr/bin/env bash
     if command -v zola > /dev/null 2>&1; then
-        echo "target='{{target}}' platform='{{platform}}'"
         echo "zola is already installed"
     else
         curl --silent https://api.github.com/repos/getzola/zola/releases/latest | \
